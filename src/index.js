@@ -1,13 +1,15 @@
-// index.js
+
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client'; // Import createRoot for React 18
 import { Provider } from 'react-redux';
 import App from './App';
 import store from './redux/store'; 
-import './index.css'
-ReactDOM.render(
+import './index.css';
+
+const root = createRoot(document.getElementById('root')); // Create root element
+
+root.render(
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById('root')
+  </Provider>
 );

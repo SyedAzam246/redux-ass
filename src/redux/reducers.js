@@ -2,6 +2,7 @@
 import { combineReducers } from 'redux';
 import { FETCH_POSTS_SUCCESS, FETCH_USER_POSTS_SUCCESS, CREATE_POST_SUCCESS, DELETE_POST_SUCCESS } from './actions';
 
+
 const initialState = {
   posts: [],
 };

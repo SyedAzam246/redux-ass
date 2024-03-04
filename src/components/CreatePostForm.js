@@ -6,11 +6,12 @@ import { createPost } from '../redux/actions';
 const CreatePostForm = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
+  const userID = 1;
   const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createPost({ title, body }));
+    dispatch(createPost({ title, body, userID }));
     setTitle('');
     setBody('');
   };
