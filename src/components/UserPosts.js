@@ -23,7 +23,6 @@ const UserPosts = () => {
       <h2>User Posts</h2>
       {/* No need for toggle button or showMyPosts state as we're always filtering for user 1 posts */}
       <PostList posts={filteredPosts} showActions={true} />
-      <PostForm />
     </div>
   );
 };
